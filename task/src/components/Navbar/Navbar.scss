@@ -1,0 +1,115 @@
+@import "src/styles/variables";
+.navbar {
+  padding: 0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  .logo {
+    width: 165px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    li {
+      margin-left: 70px;
+      list-style: none;
+      box-sizing: border-box;
+      a {
+        text-decoration: none;
+        color: #3D3D3D;
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: 500;
+      }
+    .active:after {
+      content: ' ';
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: $yellow;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 100px;
+    .nav-menu {
+      background: #fff;
+      border-right: 1px solid #ccc;
+      flex-direction: column;
+      position: fixed;
+      width: 300px;
+      top: 0;
+      left: -300px;
+      bottom: 0;
+      z-index: 10000;
+      transition: left ease-out .3s;
+      &.open {
+        left: 0;
+      }
+      li {
+        margin-top: 20px;
+        margin-left: 20px;
+        .active:after {
+          display: inline-block;
+          margin-left: 10px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .burger-menu {
+      display: block;
+      width: 45px;
+      height: 35px;
+      position: relative;
+      z-index: 50;
+      &:before, &:after, span {
+        content: '';
+        position: absolute;
+        height: 6px;
+        background: $darkText;
+        width: 100%;
+        transition: all ease .3s;
+      }
+      &:before {
+        top: 0;
+      }
+      &:after {
+        bottom: 0;
+      }
+      span {
+        z-index: 1;
+        top: 15px;
+      }
+      &.open, span.open {
+        span {
+          opacity: 0;
+        }
+        &:before {
+          transform: rotate(45deg);
+          top: 15px;
+        }
+        &:after {
+          transform: rotate(-45deg);
+          bottom: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    height: 90px;
+    .nav-menu {
+      width: 240px;
+    }
+  }
+}

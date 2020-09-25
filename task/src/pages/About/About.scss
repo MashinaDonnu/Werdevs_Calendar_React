@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+@import "src/styles/variables";
+.about {
+  .container {
+    width: 70%;
+    h1 {
+      margin-bottom: 80px;
+    }
+    p {
+      padding-bottom: 30px;
+      font-size: 20px;
+      color: $darkText;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px){
+  html {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .about {
+
+    .container {
+      width: 100%;
+    }
+  }
+}

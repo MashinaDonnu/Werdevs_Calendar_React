@@ -1,0 +1,109 @@
+@import "src/styles/variables";
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(39, 40, 41, .9);
+
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .popup {
+    position: relative;
+    width: 460px;
+    height: 140px;
+    background: #FBFBFB;
+    z-index: 999;
+    .popup-header {
+      display: flex;
+      justify-content: flex-end;
+      .close {
+        color: $darkText;
+        opacity: 1;
+        background: $yellow;
+        font-size: 18px;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          transition: opacity .4s;
+          opacity: .7;
+          cursor: pointer;
+        }
+      }
+    }
+    .popup-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        label {
+          width: 200px;
+          text-align: left;
+          font-weight: 500;
+          color: #A2A2A2;
+        }
+        input {
+          outline: none;
+          border: 2px solid #FDD000;
+          max-width: 200px;
+          font-size: 20px;
+          padding: 5px 10px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .popup-wrapper{
+    .popup {
+      width: 360px;
+      .popup-content {
+        .input-group {
+          label, input {
+            width: 160px;
+          }
+          input {
+            font-size: 16px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .popup-wrapper{
+    .popup {
+      width: 300px;
+      .popup-content {
+        .input-group {
+          label, input {
+            width: 130px;
+          }
+          input {
+            font-size: 14px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}

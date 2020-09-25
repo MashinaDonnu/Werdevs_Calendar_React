@@ -1,0 +1,98 @@
+@import "src/styles/variables";
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+
+  .bg-image {
+    background-image: url("../../images/Untitled-1Artboard1copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 64%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .header-text {
+      width: 550px;
+      padding-right: 34px;
+    }
+    h1 {
+      text-transform: uppercase;
+      color: $yellow;
+      font-weight: 800;
+      text-align: right;
+      font-size: 50px;
+      margin-top: 190px;
+    }
+    p {
+      font-size: 30px;
+      color: #DFDFDF;
+      text-align: right;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+  .home {
+    .bg-image {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .home {
+    flex-wrap: wrap;
+    .bg-image {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 550px){
+  .home {
+    height: auto;
+    .bg-image {
+      //background-size: contain;
+      height: 400px;
+      .header-text {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 35px;
+          padding: 5px;
+          margin-top: 100px;
+          background: $yellow;
+          color: $darkText;
+          border-radius: 8px;
+          text-align: center;
+        }
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .home {
+    .bg-image {
+      .header-text {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 18px;
+        }
+        p:first-child {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
