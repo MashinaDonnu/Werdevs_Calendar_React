@@ -66,12 +66,8 @@ const calendar = () => {
     }
 
     const getNextDays = () => {
-        let idx = 0
         const lastDays = []
         for (let i = 0; i <= nextDays; i++) {
-            if (idx > 6) {
-                idx = 0
-            }
             lastDays.push({
                 el: padNum(i + 1),
                 className: 'next-date',
