@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61211471.chunk.css",
+    "main.js": "/static/js/main.1d53c425.chunk.js",
+    "main.js.map": "/static/js/main.1d53c425.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0c7a2f62.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0c7a2f62.js.map",
+    "static/js/2.b9e3b7c4.chunk.js": "/static/js/2.b9e3b7c4.chunk.js",
+    "static/js/2.b9e3b7c4.chunk.js.map": "/static/js/2.b9e3b7c4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dcd467c0fd0f176af622cc5a3e02be0d.js": "/precache-manifest.dcd467c0fd0f176af622cc5a3e02be0d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.61211471.chunk.css.map": "/static/css/main.61211471.chunk.css.map",
+    "static/js/2.b9e3b7c4.chunk.js.LICENSE.txt": "/static/js/2.b9e3b7c4.chunk.js.LICENSE.txt",
+    "static/media/Logo original RGB.jpg": "/static/media/Logo original RGB.c1b22935.jpg",
+    "static/media/Home.scss": "/static/media/Untitled-1Artboard1copy.37a75b54.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c7a2f62.js",
+    "static/js/2.b9e3b7c4.chunk.js",
+    "static/css/main.61211471.chunk.css",
+    "static/js/main.1d53c425.chunk.js"
+  ]
+}
